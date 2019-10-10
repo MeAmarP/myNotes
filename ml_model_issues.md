@@ -21,3 +21,5 @@
 **Measure Algorithm Variance:**
 The variance introduced by the stochastic nature of the algorithm can be measured by repeating the evaluation of the algorithm on the same training dataset and calculating the variance or standard deviation of the model skill.    
 
+**Measure Training Data Variance:**
+The variance introduced by the training data can be measured by repeating the evaluation of the algorithm on different samples of training data, but keeping the seed for the pseudorandom number generator fixed then calculating the variance or standard deviation of the model skill.
