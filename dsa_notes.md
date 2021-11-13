@@ -1,6 +1,6 @@
 # Notes from grokking algorithm
 ## Chapter 1
-
+---
 ### Binary Search
 - Expects sorted list of elements as Input.
 - In a given list, It returns position of the element that we are looking for, else NULL.
@@ -23,6 +23,7 @@
     - O(log n) is faster than O(n), but it gets a lot faster as the list of items you’re searching grows.
 
 ## Chapter 2 : Selection Sort
+---
 ### Basics:
 - **Array**: 
   - list of elements of same datatype stored in contiguous memory locations.
@@ -35,4 +36,31 @@
   - Size is dynamic, can be change at runtime.
   - requires **sequential access**.
   - - **RUNTIME by Operation:** READ = O(N) | INSERT = O(1) | DELETE = O(1).
-  
+
+### Algorithm for Selection Sort:
+    selectionSort(array, size)
+      repeat (size - 1) times
+      set the first unsorted element as the minimum
+      for each of the unsorted elements
+        if element < currentMinimum
+          set element as new minimum
+      swap minimum with first unsorted position
+    end selectionSort
+
+## Chapter 3 : Recursion
+---
+- Recursion is when a function calls itself.
+- Every recursive function has *Base Case* and *Recursive Case*.
+### Stack
+- All function calls go onto the call stack.
+- A stack has pop and push operations.
+- The call stack can get very large, which takes up a lot of memory.
+
+## Chapter 4 : Quicksort
+---
+- This algo approaches sorting problem by using **Divide & Conquer** technique.
+- Much faster then Selection sort.
+### Algorithm for  Quick Sort:
+- An array is divided into sub-arrays by selecting a pivot element.
+- While dividing the array the pivot element should be positioned in such a way that elements less then pivot are on left and elements greater then pivot are on right.
+- These left and right sub-arrays are also further divided by similar technique, until we have single element in each of sub-array.
